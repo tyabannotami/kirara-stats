@@ -138,11 +138,11 @@ if query:
         for col in ["年", "月", "雑誌名", "掲載順"]:
             gb.configure_column(col, headerTooltip="クリックで並べ替え")
 
-        gb.configure_column("rank",   header_name="掲載\n順", minWidth=70, maxWidth=80)
-        gb.configure_column("magazine", header_name="雑誌\n名", minWidth=70)
-        gb.configure_column("is_cover", header_name="表紙", width=60)
-        gb.configure_column("is_top",   header_name="巻頭", width=60)
-        gb.configure_column("is_center",header_name="セン\nター\nカラー", width=60)
+        gb.configure_column("掲載順",  header_name="掲\n載\n順", minWidth=70, maxWidth=80)
+        gb.configure_column("雑誌名",  header_name="雑誌\n名",  minWidth=70, maxWidth=80)
+        gb.configure_column("表紙",    header_name="表紙",       width=60)
+        gb.configure_column("巻頭カラー", header_name="巻頭",       width=60)
+        gb.configure_column("センターカラー", header_name="セン\nター", width=60)
         # 🔸 URL 列だけセルレンダラーを指定
         gb.configure_column("URL", header_name="参照\n元U\nRL", cellRenderer=link_renderer)
         grid_opts = gb.build()
