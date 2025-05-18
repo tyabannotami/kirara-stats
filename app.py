@@ -81,10 +81,16 @@ if query:
         # ① フィルタ・メニューアイコンを消す ──────────
         st.markdown("""
         <style>
-        @media(max-width: 600px){          /* 600px 以下＝スマホ */
-            .ag-header-cell-menu-button {  /* 三本線アイコン */
-                display:none !important;
-            }
+        /* ─── スマホ幅でもヘッダーを 2 文字入るように ─── */
+        @media(max-width: 600px){
+        .ag-icon-menu,
+        .ag-icon-filter{
+            display:none !important;        /* アイコン非表示 */
+        }
+        .ag-header-cell-label{
+            white-space:normal !important;  /* 折り返し許可 */
+            line-height:1.1rem;
+        }
         }
         </style>
         """, unsafe_allow_html=True)
@@ -132,7 +138,7 @@ if query:
         suppressMenu=True,            # 列ごとのメニューもオフ
         minWidth=60, maxWidth=80
         )
-        
+
         # 🔸 URL 列だけセルレンダラーを指定
         gb.configure_column("URL", header_name="参照元URL", cellRenderer=link_renderer)
         grid_opts = gb.build()
