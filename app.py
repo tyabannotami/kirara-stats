@@ -97,7 +97,12 @@ if query:
 
         # ④ AG Grid のオプション作成
         gb = GridOptionsBuilder.from_dataframe(show_df)      # ← show_df はフィルタ後の DataFrame
-        gb.configure_default_column(filter=True, sortable=True, resizable=True)
+        # ── ヘッダー折り返しを有効に（全列デフォルト） ──
+        gb.configure_default_column(
+            filter=True, sortable=True, resizable=True,
+            wrapHeaderText=True,        # ★ ← 追加
+            autoHeaderHeight=True       # ★ ← 追加
+        )
 
         # --- 日本語ロケールを設定 ----------------
         jp_locale = {
@@ -133,8 +138,13 @@ if query:
         for col in ["年", "月", "雑誌名", "掲載順"]:
             gb.configure_column(col, headerTooltip="クリックで並べ替え")
 
+        gb.configure_column("rank",   header_name="掲載\n順", minWidth=70, maxWidth=80)
+        gb.configure_column("magazine", header_name="雑誌\n名", minWidth=70)
+        gb.configure_column("is_cover", header_name="表紙", width=60)
+        gb.configure_column("is_top",   header_name="巻頭", width=60)
+        gb.configure_column("is_center",header_name="セン\nター\nカラー", width=60)
         # 🔸 URL 列だけセルレンダラーを指定
-        gb.configure_column("URL", header_name="参照元URL", cellRenderer=link_renderer)
+        gb.configure_column("URL", header_name="参照\n元U\nRL", cellRenderer=link_renderer)
         grid_opts = gb.build()
         grid_opts["localeText"] = jp_locale      # ★ ここがポイント
 
