@@ -1,0 +1,240 @@
+﻿magazine,issue_id,type,detail,work,field,value,fixed,note
+kirara,kirara-2013-05,center_count,5 作,,,,OK,センターカラーの女子大生生活様式２話記載あり。
+kirara,kirara-2013-07,center_count,3 作,こんかつ!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara,kirara-2013-11,center_count,3 作,棺担ぎのクロ。懐中旅話,is_center,TRUE,OK,見出しが「センタカラー」となっていた。
+kirara,kirara-2013-12,cover_count,3 作,あっちこっち,is_cover,TRUE,OK,独立創刊１０周年合同表紙
+kirara,kirara-2013-12,cover_count,3 作,ゆゆ式,is_cover,TRUE,OK,独立創刊１０周年合同表紙
+kirara,kirara-2013-12,cover_count,3 作,棺担ぎのクロ。懐中旅話,is_cover,TRUE,OK,独立創刊１０周年合同表紙
+kirara,kirara-2014-05,center_count,3 作,かいちょー☆,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara,kirara-2014-07,center_count,5 作,幸腹グラフィティ,is_center,FALSE,OK,見出しではセンターカラーにも見えるが、実態はカラーでない。（単行本４巻p61で確認）
+kirara,kirara-2015-04,center_count,5 作,,,,OK,センターカラーの箱入りドロップス２話掲載あり。
+kirara,kirara-2015-08,center_count,3 作,きらきら☆スタディー ~絶対合格宣言~,is_center,TRUE,OK,半角全角の表記揺れで不一致。
+kirara,kirara-2016-03,center_count,3 作,ふたりごこち,is_center,TRUE,OK,見出しでは「ふたりごここち」となっていた。
+kirara,kirara-2016-05,top_not_rank1,rank=2,,,,OK,ホームページのラインナップ上はそうなっている。実態は不明
+kirara,kirara-2016-06,cover_count,0 作,三者三葉,is_cover,TRUE,OK,ホームページでは記載がないが表紙目視確認。
+kirara,kirara-2017-01,center_count,5 作,,,,OK,センターカラーのスロウスタート２話記載あり。
+kirara,kirara-2017-07,cover_count,0 作,スロウスタート,is_cover,TRUE,OK,ホームページでは記載がないが表紙目視確認。
+kirara,kirara-2017-09,center_count,5 作,,,,OK,センターカラーのスロウスタート２話記載あり。
+kirara,kirara-2017-10,cover_count,0 作,スロウスタート,is_cover,TRUE,OK,ホームページでは記載がないが表紙目視確認。
+kirara,kirara-2017-10,center_count,5 作,,,,OK,センターカラーの棺担ぎのクロ。懐中旅話２話記載あり。
+kirara,kirara-2018-01,center_count,1 作,放課後すとりっぷ,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara,kirara-2018-01,center_count,1 作,がんくつ荘の不夜城さん,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara,kirara-2018-01,center_count,1 作,"オリーブ! Believe,""Olive""? ",is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2018-02,center_count,5 作,,,,OK,センターカラーのみゃーこせんせぇ２話記載あり。
+kirara,kirara-2018-06,center_count,3 作,棺担ぎのクロ。懐中旅話,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2018-08,center_count,3 作,きらきら☆スタディー ~絶対合格宣言~,is_center,TRUE,OK,半角全角の表記揺れで不一致。
+kirara,kirara-2018-11,center_count,5 作,,,,OK,センターカラーの奥さまは新妻ちゃん２話記載あり。
+kirara,kirara-2018-12,center_count,3 作,下を向いて歩こう,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2018-12,cover_count,6作,けいおん!Shuffle,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2018-12,cover_count,6作,スロウスタート,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2018-12,cover_count,6作,あっちこっち,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2018-12,cover_count,6作,ゆゆ式,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2018-12,cover_count,6作,三者三葉,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2018-12,cover_count,6作,うらら迷路帖,is_cover,TRUE,OK,独立創刊１５周年合同表紙
+kirara,kirara-2019-01,center_count,3 作,チアフル・スプリンクル!,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-07,center_count,2 作,むすんで、つないで。,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-07,center_count,2 作,がんくつ荘の不夜城さん,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-08,center_count,3 作,星屑テレパス,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-09,center_count,1 作,みゃーこせんせぇ,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-09,center_count,1 作,こはる日和。,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2019-09,center_count,1 作,ゆえに、アイドル革命!,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2020-05,center_count,2 作,ぎんしお少々,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2020-05,center_count,2 作,きゃすとおふ!,is_center,TRUE,OK,前号の予告から推測
+kirara,kirara-2020-07,cover_count,4作,けいおん!Shuffle,is_cover,TRUE,OK,２００号記念合同表紙
+kirara,kirara-2020-07,cover_count,4作,スロウスタート,is_cover,TRUE,OK,２００号記念合同表紙
+kirara,kirara-2020-07,cover_count,4作,あっちこっち,is_cover,TRUE,OK,２００号記念合同表紙
+kirara,kirara-2020-07,cover_count,4作,ゆゆ式,is_cover,TRUE,OK,２００号記念合同表紙
+kirara,kirara-2021-03,cover_count,2 作,,,,OK,表紙のスロウスタート２話記載あり。
+kirara,kirara-2021-03,top_count,2 作,,,,OK,巻頭カラーのスロウスタート２話記載あり。
+kirara,kirara-2021-06,center_count,5 作,,,,OK,センターカラーの推しごとびより２話記載あり。
+kirara,kirara-2021-07,center_count,3 作,探偵夢宮さくらの完全敗北,is_center,TRUE,OK,「探偵」が見出し行から抜けており不一致
+kirara,kirara-2021-08,cover_count,3 作,,,,OK,推しごとびより、ぎんしお少々のコラボ表紙かつぎんしお少々２話掲載で問題なし
+kirara,kirara-2021-08,center_count,5 作,,,,OK,センターカラーのぎんしお少々２話掲載で問題なし
+kirara,kirara-2021-09,center_count,5 作,,,,OK,センターカラーの「不衛生なのは、お断りです。」２話掲載で問題なし。
+kirara,kirara-2022-12,center_count,5 作,,,,OK,センターカラーの「ちみどろアイスクリーム」２話掲載で問題なし。
+kirara,kirara-2023-04,center_count,5 作,,,,OK,センターカラーの「キミはあくまでも。」２話掲載で問題なし。
+kirara,kirara-2025-02,center_count,5 作,,,,OK,センターカラーの「好都合セミフレンド」２話掲載で問題なし。
+kirara-carat,kirara-carat-2013-01,center_count,3 作,イキモノシステム,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-02,center_count,3 作,ハレハレハレルヤ!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-03,center_count,2 作,あまゆる。,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-03,center_count,2 作,NEW GAME!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-04,center_count,1 作,ハレハレハレルヤ!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-04,center_count,1 作,うぃーしぇあ!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-04,center_count,1 作,,,,OK,もう1作は不明
+kirara-carat,kirara-carat-2013-05,center_count,2 作,だいたいこんなンで?,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-05,center_count,2 作,ののかノ~ト,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-06,center_count,1 作,幸腹グラフィティ,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-06,center_count,1 作,ゆきんこ*,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-06,center_count,1 作,すぷりんと!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-07,center_count,2 作,イキモノシステム,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-07,center_count,2 作,すくーる・くえすと!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-08,center_count,2 作,いろはステーション,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-08,center_count,2 作,ののかノ~ト,is_center,TRUE,OK,前号の予告から推測
+kirara-carat,kirara-carat-2013-09,center_count,2 作,だいたいこんなンで？,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-09,center_count,2 作,しずくマリアージュ!,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-11,center_count,3 作,ブレンド・S,is_center,TRUE,OK,前号の予告から推測
+kirara-carat,kirara-carat-2013-12,center_count,1 作,時計じかけのミュージアム,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-12,center_count,1 作,まごとじG,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2013-12,center_count,1 作,とりあえず居合でも。,is_center,TRUE,OK,前号の予告から推測
+kirara-carat,kirara-carat-2014-02,cover_count,3作,ひだまりスケッチ,is_cover,TRUE,OK,１００号記念合同表紙
+kirara-carat,kirara-carat-2014-02,cover_count,3作,GA 芸術科アートデザインクラス,is_cover,TRUE,OK,１００号記念合同表紙
+kirara-carat,kirara-carat-2014-02,cover_count,3作,Aチャンネル,is_cover,TRUE,OK,１００号記念合同表紙
+kirara-carat,kirara-carat-2014-03,center_count,2 作,セカイ魔王,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-carat,kirara-carat-2014-03,center_count,2 作,あまゆる。,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-carat,kirara-carat-2014-07,center_count,2 作,いつか四つ葉のシャムロック,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2014-07,center_count,2 作,ウイルス☆バスターズ,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2014-08,center_count,3 作,まちカドまぞく,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-carat,kirara-carat-2014-09,center_count,3 作,NEW GAME!,is_center,TRUE,OK,前号の予告から推測
+kirara-carat,kirara-carat-2015-10,center_count,3 作,,,,OK,ホームページに掲載取りやめの記載あり。
+kirara-carat,kirara-carat-2015-12,cover_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2015-12,top_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-02,cover_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-02,top_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-03,cover_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-03,top_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-04,center_count,5 作,,,,OK,センターカラーの『まちカドまぞく』２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-06,cover_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-06,top_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-07,cover_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-07,top_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-07,center_count,3 作,黒髪巫女とマリアウィッチ,is_center,TRUE,OK,カギカッコの末尾が取れており表記揺れで不一致
+kirara-carat,kirara-carat-2016-09,center_count,5 作,,,,OK,センターカラーの『ブレンド・S』２話掲載のため問題なし
+kirara-carat,kirara-carat-2016-12,center_count,5 作,,,,OK,センターカラーの『黒髪巫女とマリアウィッチ』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-01,center_count,5 作,,,,OK,センターカラーの『異なる次元の管理人さん』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-02,center_count,5 作,,,,OK,センターカラーの『花降り宿のやどかり乙女』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-04,center_count,5 作,,,,OK,センターカラーの『ブレンド・S』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-05,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-06,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2017-11,center_count,5 作,,,,OK,センターカラーの『ふじょ子とユリ子』２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-01,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-03,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-05,cover_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-05,top_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-05,center_count,5 作,,,,OK,センターカラーの『まちカドまぞく』２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-07,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-10,cover_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-10,top_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2018-12,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2019-02,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2019-08,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2019-09,center_count,5 作,,,,OK,センターカラーの『紡ぐ乙女と大正の月』２話掲載のため問題なし
+kirara-carat,kirara-carat-2019-11,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2020-03,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2020-07,cover_count,2 作,,,,OK,表紙のNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2020-07,top_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2020-10,center_count,5 作,,,,OK,センターカラーの『NEWGAME！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2021-03,top_count,2 作,,,,OK,巻頭カラーのNEWGAME！２話掲載のため問題なし
+kirara-carat,kirara-carat-2021-11,center_count,5 作,,,,OK,センターカラーの『死神ドットコム』２話掲載のため問題なし
+kirara-carat,kirara-carat-2021-12,center_count,5 作,,,,OK,センターカラーの『ばっどがーる』２話掲載のため問題なし
+kirara-carat,kirara-carat-2022-09,cover_count,2 作,,,,OK,表紙の『ばっどがーる』２話掲載のため問題なし
+kirara-carat,kirara-carat-2022-09,top_count,2 作,,,,OK,巻頭カラーの『ばっどがーる』２話掲載のため問題なし
+kirara-carat,kirara-carat-2023-01,center_count,5 作,,,,OK,センターカラーの『のけもののまち』２話掲載のため問題なし
+kirara-carat,kirara-carat-2023-08,center_count,5 作,,,,OK,センターカラーの『天死探偵モグモグ』２話掲載のため問題なし
+kirara-carat,kirara-carat-2023-10,center_count,5 作,,,,OK,センターカラーの『Vドライブ！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2023-12,center_count,5 作,,,,OK,センターカラーの『このままモブじゃ終われない！』２話掲載のため問題なし
+kirara-carat,kirara-carat-2024-05,center_count,3 作,押しかけ女房、コドモ付き!,is_center,TRUE,OK,末尾の！が取れており表記揺れで不一致
+kirara-carat,kirara-carat-2024-12,center_count,5 作,,,,OK,センターカラーの『アイドルノブナ☆ガール』２話掲載のため問題なし
+kirara-carat,kirara-carat-2025-02,center_count,5 作,,,,OK,センターカラーの『メディアミックス＊ガールズ』２話掲載のため問題なし
+kirara-carat,kirara-carat-2025-03,top_not_rank1,rank=2,このままモブじゃ終われない!,rank,1,OK,実態と掲載順が異なる
+kirara-carat,kirara-carat-2025-03,top_not_rank1,rank=2,ばっどがーる,rank,2,OK,実態と掲載順が異なる
+kirara-carat,kirara-carat-2025-03,center_count,3 作,Vドライブ!,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-carat,kirara-carat-2025-04,top_not_rank1,rank=2,ばっどがーる,rank,2,OK,実態と掲載順が異なる
+kirara-carat,kirara-carat-2025-04,top_not_rank1,rank=2,押しかけ女房、コドモ付き!,rank,1,OK,実態と掲載順が異なる
+kirara-carat,kirara-carat-2025-04,center_count,5 作,,,,OK,センターカラーの『アイドルノブナ☆ガール』２話掲載のため問題なし
+kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,魔法少女は羞恥心で強くなる,rank,1,OK,実態と掲載順が異なる
+kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,mono,rank,2,OK,実態と掲載順が異なる
+kirara-forward,kirara-forward-2015-02,cover_count,0 作,ハナヤマタ,is_cover,TRUE,OK,ホームページの記載で「TVアニメ公式ガイドブック colorful flowers」を表紙判定してしまっていて不一致
+kirara-forward,kirara-forward-2016-06,cover_count,2 作,,,,OK,表紙の『あんハピ♪』２話掲載のため問題なし
+kirara-forward,kirara-forward-2018-08,cover_count,2 作,,,,OK,表紙の『はるかなレシーブ』２話掲載のため問題なし
+kirara-forward,kirara-forward-2023-04,cover_count,0 作,ちょっといっぱい！,is_cover,TRUE,OK,末尾の！が取れており表記揺れで不一致
+kirara-max,kirara-max-2013-01,center_count,2 作,,,,OK,情報なしのため不明
+kirara-max,kirara-max-2013-02,center_count,2 作,,,,OK,情報なしのため不明
+kirara-max,kirara-max-2013-04,center_count,2 作,アキタランド・ゴシック,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-max,kirara-max-2013-04,center_count,2 作,コスプレの神!,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2013-04,cover_count,2 作,ご注文はうさぎですか?,is_cover,TRUE,OK,きんモザごちうさコラボ表紙
+kirara-max,kirara-max-2013-04,cover_count,2 作,きんいろモザイク,is_cover,TRUE,OK,きんモザごちうさコラボ表紙
+kirara-max,kirara-max-2013-05,center_count,3 作,うにうにうにうに,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2013-06,center_count,3 作,彼氏ってどこに行ったら買えますの!?,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-max,kirara-max-2013-07,center_count,3 作,,,,OK,情報なしのため不明
+kirara-max,kirara-max-2013-08,center_count,3 作,,,,OK,情報なしのため不明
+kirara-max,kirara-max-2013-09,center_count,2 作,そよ風テイクオフ,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-max,kirara-max-2013-09,center_count,2 作,あかりのみみはなんのみみ?,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-max,kirara-max-2013-10,top_count,2 作,きんいろモザイクアフレコレポート,is_top,FALSE,OK,きんいろモザイク扱いになって巻頭カラーとなっている。
+kirara-max,kirara-max-2014-02,cover_count,2 作,,,TRUE,OK,きんモザごちうさコラボ表紙
+kirara-max,kirara-max-2014-05,center_count,3 作,こみっくがーるず,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2014-06,center_count,1 作,しょーがくせいのあたまのなか,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり　他２作は不明
+kirara-max,kirara-max-2014-07,center_count,3 作,アリノス☆ワンダーランド,is_center,TRUE,OK,センタカラー　となっている表記揺れ
+kirara-max,kirara-max-2014-11,center_count,2 作,水瀬まりんの航海日誌,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-max,kirara-max-2014-11,center_count,2 作,ご注文はうさぎですか?,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
+kirara-max,kirara-max-2015-10,center_count,3 作,まい・ブックカード!,is_center,TRUE,OK,末尾の！が取れており表記揺れで不一致
+kirara-max,kirara-max-2016-06,top_count,2 作,,,,OK,巻頭カラーの『ステラのまほう』２話掲載のため問題なし
+kirara-max,kirara-max-2016-07,top_count,2 作,,,,OK,巻頭カラーの『ステラのまほう』２話掲載のため問題なし
+kirara-max,kirara-max-2016-08,top_count,2 作,,,,OK,巻頭カラーの『ステラのまほう』２話掲載のため問題なし
+kirara-max,kirara-max-2016-08,center_count,3 作,ご注文はうさぎですか?,is_center,TRUE,OK,ごちうさは巻頭カラーでなければセンターカラーのため
+kirara-max,kirara-max-2016-11,center_count,2 作,きんいろモザイク,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-max,kirara-max-2016-11,center_count,2 作,きらりブックス迷走中!,is_center,TRUE,OK,きらら編集部公式ツイッターに記載あり
+kirara-max,kirara-max-2017-04,center_count,2 作,ななかさんの印税生活入門,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2017-04,center_count,2 作,夢見るプリマ・ガール!,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2017-05,center_count,3 作,どうして私が美術科に!?,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2017-06,center_count,3 作,ゴスロリJK無人島漂流記,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2017-07,center_count,2 作,TCGirls,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2017-07,center_count,2 作,JKすぷらっしゅ!,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2018-01,cover_count,0 作,ご注文はうさぎですか?,is_cover,TRUE,OK,「Dear My Sister」絶賛上映中！にかかって取得漏れ
+kirara-max,kirara-max-2018-06,center_count,3 作,私を球場に連れてって!,is_center,TRUE,OK,表記揺れで「球場へ」となっていて取得漏れ
+kirara-max,kirara-max-2018-11,center_count,5 作,,,,OK,センターカラーの『旅する海とアトリエ』２話掲載のため問題なし
+kirara-max,kirara-max-2019-02,cover_count,0 作,ご注文はうさぎですか?,is_cover,TRUE,OK,表紙の表記がない
+kirara-max,kirara-max-2019-02,center_count,5 作,ご注文はうさぎですか?,is_center,FALSE,OK,ごちうさは巻頭カラーでセンターからではないのが実態（掲載順１番）
+kirara-max,kirara-max-2019-03,cover_count,0 作,ステラのまほう,is_cover,TRUE,OK,表紙の表記がない
+kirara-max,kirara-max-2019-03,center_count,5 作,ステラのまほう,is_center,FALSE,OK,ステラのまほうは巻頭カラーでセンターからではないのが実態（掲載順１番）
+kirara-max,kirara-max-2019-04,cover_count,0 作,ぼっち・ざ・ろっく!,is_cover,TRUE,OK,表紙の表記がない
+kirara-max,kirara-max-2019-04,center_count,5 作,ぼっち・ざ・ろっく!,is_center,FALSE,OK,ぼっち・ざ・ろっく!は巻頭カラーでセンターからではないのが実態（掲載順１番）
+kirara-max,kirara-max-2019-05,center_count,5 作,,,,OK,センターカラーの『ハルメタルドールズ!』２話掲載のため問題なし
+kirara-max,kirara-max-2019-11,cover_count,2 作,,,,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,top_count,2 作,,,,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,center_count,5 作,初恋*れ~るとりっぷ,delete,23,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,center_count,5 作,いのち短し善せよ乙女,delete,24,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,center_count,5 作,ご注文はうさぎですか?,delete,25,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,center_count,5 作,きんいろモザイク,delete,26,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2019-11,center_count,5 作,私を球場に連れてって!,delete,27,OK,次回予告分までラインアップに入ってしまっているため対応
+kirara-max,kirara-max-2020-01,center_count,5 作,,,,OK,センターカラーの『ホレンテ島の魔法使い』２話掲載のため問題なし
+kirara-max,kirara-max-2020-06,cover_count,0 作,こみっくがーるず・,is_cover,TRUE,OK,表記揺れで末尾に・が入ってしまっているため対応
+kirara-max,kirara-max-2020-06,cover_count,0 作,こみっくがーるず・,is_top,TRUE,OK,表記揺れで末尾に・が入ってしまっているため対応
+kirara-max,kirara-max-2020-11,center_count,2 作,こみっくがーるず・,is_center,TRUE,OK,表記揺れで末尾に・が入ってしまっているため対応
+kirara-max,kirara-max-2020-11,center_count,2 作,きんいろモザイクBest wishes.,is_center,TRUE,OK,表記揺れできんいろモザイク Best wishes.とスペースが入ってしまっているため取得漏れ
+kirara-max,kirara-max-2021-03,center_count,3 作,きんいろモザイクBest wishes.,is_center,TRUE,OK,表記揺れできんいろモザイク Best wishes.とスペースが入ってしまっているため取得漏れ
+kirara-max,kirara-max-2021-05,cover_count,0 作,きんいろモザイクBest wishes.,is_cover,TRUE,OK,表記揺れできんいろモザイク Best wishes.とスペースが入ってしまっているため取得漏れ
+kirara-max,kirara-max-2021-05,center_count,3 作,こみっくがーるず・,is_center,TRUE,OK,表記揺れで末尾に・が入ってしまっているため対応
+kirara-max,kirara-max-2021-09,center_count,3 作,お嬢様のVな事情,is_center,TRUE,OK,表記揺れで「お姉様のVな事情」となっていて取得漏れ
+kirara-max,kirara-max-2022-01,center_count,3 作,私、異世界で奴隷にされちゃいました(泣)しかもご主人様は性格の悪いエルフの女王様(でも超美人←ここ大事)無能すぎて罵られまくるけど同僚のオークが癒やし系だし里のエルフは可愛いし結構楽しんでる私です。,is_center,TRUE,OK,表記揺れと推定
+kirara-max,kirara-max-2022-09,center_count,3 作,おきゅいん!,is_center,TRUE,OK,前号の予告から推測
+kirara-max,kirara-max-2022-11,center_count,3 作,,,,OK,情報なしのため不明
+kirara-max,kirara-max-2024-11,cover_count,2 作,ご注文はうさぎですか?,is_cover,TRUE,OK,ごちうさぼざろコラボ表紙のため
+kirara-max,kirara-max-2024-11,cover_count,2 作,ぼっち・ざ・ろっく!,is_cover,TRUE,OK,ごちうさぼざろコラボ表紙のため
+kirara-max,kirara-max-2025-03,center_count,3 作,ぬるめた,is_center,TRUE,OK,前号の予告から推測
+kirara-miracle,kirara-miracle-2013-06,cover_count,1 作,夜森の国のソラニ,is_cover,FALSE,OK,取得誤り
+kirara-miracle,kirara-miracle-2013-06,cover_count,1 作,Good night! angel,is_cover,TRUE,OK,表記揺れで「A」が大文字小文字の差異があり取得漏れ
+kirara-miracle,kirara-miracle-2013-06,center_count,3 作,Good night! angel,is_center,TRUE,OK,表記揺れで「A」が大文字小文字の差異があり取得漏れ
+kirara-miracle,kirara-miracle-2016-04,center_count,3 作,カラフル・マキアート!-魔法少女は戦わない。-,is_center,TRUE,OK,表記揺れで「！」が全角半角の差異があり取得漏れ
+kirara-miracle,kirara-miracle-2016-05,cover_count,2 作,,,OK,表紙のうらら迷路帖２話掲載のため問題なし,
+kirara-miracle,kirara-miracle-2016-05,top_count,2 作,,,OK,巻頭カラーのうらら迷路帖２話掲載のため問題なし,
+kirara-miracle,kirara-miracle-2016-05,center_count,2 作,ビビッド・モンスターズ・クロニクル,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-05,center_count,2 作,魔王城のお姫様,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-06,center_count,2 作,幸腹グラフィティ,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-06,center_count,2 作,全裸.zip,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-07,center_count,2 作,ビビッド・モンスターズ・クロニクル,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-07,center_count,2 作,かんきつパンチ!,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-08,center_count,1 作,カラフル・マキアート!-魔法少女は戦わない。-,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-08,center_count,1 作,魔王城のお姫様,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-08,center_count,1 作,ハロー⭐︎しーきゅー,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-09,center_count,2 作,幸腹グラフィティ,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-09,center_count,2 作,あじさい*プラネット,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-10,center_count,2 作,幸腹グラフィティ,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-10,center_count,2 作,マオウ上のお姫様,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2016-11,center_count,3 作,カラフル・マキアート!ー魔法少女は戦わない。ー,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-02,center_count,2 作,ビビッド・モンスターズ・クロニクル,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-02,center_count,2 作,音無さんは破壊神!,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-04,center_count,3 作,カラフル・マキアート!ー魔法少女は戦わない。ー,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-05,center_count,2 作,広がる地図とホウキ星,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-05,center_count,2 作,解決!オバケカプリチオ!!,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-06,center_count,3 作,お願い!ロイヤルニート,is_center,TRUE,OK,取得漏れ理由不明
+kirara-miracle,kirara-miracle-2017-07,top_not_rank1,rank=2,,,,OK,「うらら迷路帖」AJイベントレポートが巻頭なので問題なし
