@@ -132,12 +132,6 @@ if query:
         # 🔸 ② 各列にツールチップを付ける
         for col in ["年", "月", "雑誌名", "掲載順"]:
             gb.configure_column(col, headerTooltip="クリックで並べ替え")
-        # ② ヘッダを改行して幅を節約（任意で必要な列だけ）
-        gb.configure_column("掲載順",
-        header_name="掲載<br>順",     # ← HTML 改行
-        suppressMenu=True,            # 列ごとのメニューもオフ
-        minWidth=60, maxWidth=80
-        )
 
         # 🔸 URL 列だけセルレンダラーを指定
         gb.configure_column("URL", header_name="参照元URL", cellRenderer=link_renderer)
