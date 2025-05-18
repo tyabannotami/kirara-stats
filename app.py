@@ -78,7 +78,17 @@ if query:
             "URL",
         ]
         show_df = sub[show_cols]
-        #st.dataframe(show_df)
+        # ① フィルタ・メニューアイコンを消す ──────────
+        st.markdown("""
+        <style>
+        @media(max-width: 600px){          /* 600px 以下＝スマホ */
+            .ag-header-cell-menu-button {  /* 三本線アイコン */
+                display:none !important;
+            }
+        }
+        </style>
+        """, unsafe_allow_html=True)
+
         # ④ AG Grid のオプション作成
         gb = GridOptionsBuilder.from_dataframe(show_df)      # ← show_df はフィルタ後の DataFrame
         gb.configure_default_column(filter=True, sortable=True, resizable=True)
@@ -116,6 +126,13 @@ if query:
         # 🔸 ② 各列にツールチップを付ける
         for col in ["年", "月", "雑誌名", "掲載順"]:
             gb.configure_column(col, headerTooltip="クリックで並べ替え")
+        # ② ヘッダを改行して幅を節約（任意で必要な列だけ）
+        gb.configure_column("掲載順",
+        header_name="掲載<br>順",     # ← HTML 改行
+        suppressMenu=True,            # 列ごとのメニューもオフ
+        minWidth=60, maxWidth=80
+        )
+        
         # 🔸 URL 列だけセルレンダラーを指定
         gb.configure_column("URL", header_name="参照元URL", cellRenderer=link_renderer)
         grid_opts = gb.build()
