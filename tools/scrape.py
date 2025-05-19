@@ -54,7 +54,6 @@ def extract_color_blocks(
                     add("表紙" if "表紙" in lbl else "巻頭", m.group(1))
         else:
             hyoushiari_flag=False
-            print (magazine)
             desc = soup.select_one("div.content-desc")
             if desc:
                 for tk in desc.stripped_strings:
@@ -209,15 +208,15 @@ def cli() -> None:
 
     df_urls = pd.read_csv(args.url_csv, encoding="utf-8-sig")
     if args.start:
-        df_urls = df_urls[df_urls["year"] >= args.start]
+        df_urls = df_urls[df_urls["年"] >= args.start]
     if args.end:
-        df_urls = df_urls[df_urls["year"] <= args.end]
+        df_urls = df_urls[df_urls["年"] <= args.end]
 
     rows_by_slug: dict[str, list[dict]] = {}
 
     for _, row in df_urls.iterrows():
-        url  = row["url"]
-        slug = row["slug"]                  # kirara / kirara-max / carat / kirara-forward
+        url  = row["URL"]
+        slug = row["種別"]                  # kirara / kirara-max / carat / kirara-forward
         print("▶", url)
         try:
             rows = parse_issue(url, slug)
