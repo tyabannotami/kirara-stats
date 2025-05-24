@@ -48,6 +48,17 @@ def apply_issue_fixes(df):
         elif r["field"] == "rank":
             df.loc[mask, "rank"] = int(r["value"])
     return df
+# ---------- カラー重複の整理 ----------  ★ 追加
+def dedupe_two_episode_color(df: pd.DataFrame) -> pd.DataFrame:
+    for (iss, work), g in df.groupby(["issue_id", "work"]):
+        if len(g) <= 1:
+            continue
+        # is_top と is_center を個別に整理
+        for flag in ["is_top", "is_center"]:
+            flag_rows = g[g[flag]].sort_values("rank").index
+            if len(flag_rows) > 1:
+                df.loc[flag_rows[1:], flag] = False
+    return df
 
 # ---------- main ----------
 def main():
@@ -70,6 +81,7 @@ def main():
     ).astype(str).str.zfill(2)
     df = apply_alias(df)
     df = apply_issue_fixes(df)
+    df = dedupe_two_episode_color(df)
     df.to_csv(DST, index=False, encoding="utf-8-sig")
     print(f"✅ master.csv updated: {len(df)} rows")
 
