@@ -229,9 +229,23 @@ def cli() -> None:
     total = 0
     for slug, rows in rows_by_slug.items():
         out = DATA_DIR / f"{slug}.csv"
-        pd.DataFrame(rows).to_csv(out, index=False, encoding="utf-8-sig")
-        print(f"  ✓ {slug}: {len(rows)} rows → {out}")
-        total += len(rows)
+        # ① 既存ファイルがあれば読み込み …
+        if out.exists():
+            old = pd.read_csv(out, encoding="utf-8-sig")
+            new = pd.DataFrame(rows)
+            merged = pd.concat([old, new], ignore_index=True)
+
+            # ② 同じ作品・同じrankの重複行は keep="first" で残す
+            merged = merged.drop_duplicates(
+                subset=["magazine", "year", "month", "work", "rank"],
+                keep="first"
+            )
+        else:
+            merged = pd.DataFrame(rows)
+        merged.to_csv(out, index=False, encoding="utf-8-sig")
+        print(f"  ✓ {slug}: {len(merged)} rows (after merge) → {out}")
+        total += len(rows)          # ← 新たにスクレイプした行数で集計
+
 
     print(f"\n✅ all done: {total} rows collected")
 
