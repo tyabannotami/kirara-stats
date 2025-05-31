@@ -83,5 +83,7 @@ if __name__ == "__main__":
     warn_df = validate_df(pd.read_csv(sys.argv[1]))
     if warn_df.empty:
         print("ALL PASS ✅")
+        sys.exit(0)
     else:
         print(warn_df.to_string(index=False))
+        sys.exit(1)
