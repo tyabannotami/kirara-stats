@@ -1,0 +1,2 @@
+# repo/.gitattributes
+*.csv text eol=lf
