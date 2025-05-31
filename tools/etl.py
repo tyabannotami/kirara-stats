@@ -27,7 +27,7 @@ def apply_alias(df):
 
 # ---------- 手動号修正 ----------
 def apply_issue_fixes(df):
-    fix = pd.read_csv("overrides/issues_fix.csv")
+    fix = pd.read_csv(OV_DIR /"issues_fix.csv")
     for _, r in fix.iterrows():
         if str(r.get("fixed")).upper() != "OK":
             continue
