@@ -85,7 +85,7 @@ def main():
     df = dedupe_two_episode_color(df)
     df = df.sort_values(["magazine", "year", "month", "rank"])
     df.to_csv(DST, index=False, encoding="utf-8-sig",
-          line_terminator="\n", quoting=csv.QUOTE_MINIMAL)
+          lineterminator="\n", quoting=csv.QUOTE_MINIMAL)
     print(f"✅ master.csv updated: {len(df)} rows")
 
 if __name__ == "__main__":
