@@ -10,7 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
+    permissions:
+      contents: write   
+      
     steps:
       # 1) コード取得 ---------------------------------------------------------
       - uses: actions/checkout@v4
