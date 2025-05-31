@@ -1,0 +1,49 @@
+# .github/workflows/update.yml
+name: scrape-etl-nightly
+
+on:
+  schedule:
+    # 日本時間 20:00 = UTC 11:00 毎日
+    - cron: '0 11 * * *'
+  workflow_dispatch:        # 手動トリガ
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1) コード取得 ---------------------------------------------------------
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0     # master.csv の差分検知用に完全履歴
+
+      # 2) Python セットアップ ----------------------------------------------
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 3) 依存パッケージ ----------------------------------------------------
+      - name: Install deps
+        run: |
+          pip install -r requirements.txt
+          pip install streamlit-aggrid requests lxml python-dateutil
+
+      # 4) パイプライン一括実行 (URL収集→Scrape→ETL→Validate) --------------
+      - name: Run pipeline
+        run: python tools/run_pipeline.py
+
+      # 5) 差分があればコミット & プッシュ ----------------------------------
+      - name: Commit & push if changed
+        run: |
+          git config --global user.email "ci-bot@users.noreply.github.com"
+          git config --global user.name  "ci-bot"
+          if [[ `git status --porcelain` ]]; then
+            git add data tools/kirara_issue_urls.csv
+            git commit -m "chore(ci): monthly scrape & etl"
+            git push
+          else
+            echo "No changes"
+          fi
+
+      
