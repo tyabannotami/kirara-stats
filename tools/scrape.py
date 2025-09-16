@@ -11,7 +11,9 @@ import pandas as pd, requests, bs4
 # ────────────────────────────────────────────────────────────────
 UA        = {"User-Agent": "Mozilla/5.0"}
 DATA_DIR  = Path(__file__).resolve().parents[1] / "data" / "raw"
-TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
+#TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
+#新フォーマットでは２重カギカッコだけ抜けば良さそうなので修正
+TITLE_RE  = re.compile(r"[『]([^『』]+)[』]")
 CIRCLED_RE = re.compile(r"[①-⑳➀➁]")
 
 def std(s: str) -> str:
