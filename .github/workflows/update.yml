@@ -7,46 +7,65 @@ on:
     - cron: '0 11 * * *'
   workflow_dispatch:        # 手動トリガ
 
+permissions:
+  contents: write           # push するので必要
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write   
-      
-    steps:
-      # 1) コード取得 ---------------------------------------------------------
-      - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0     # master.csv の差分検知用に完全履歴
 
-      # 2) Python セットアップ ----------------------------------------------
-      - name: Set up Python
+    steps:
+      # 1) チェックアウト（完全履歴が必要）
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2) Python セットアップ
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # 3) 依存パッケージ ----------------------------------------------------
+      # 3) 依存パッケージ
       - name: Install deps
         run: |
           pip install -r requirements.txt
           pip install streamlit-aggrid requests lxml python-dateutil
 
-      # 4) パイプライン一括実行 (URL収集→Scrape→ETL→Validate) --------------
+      # 4) パイプライン一括実行 (URL収集→Scrape→ETL→Validate)
       - name: Run pipeline
         run: python tools/run_pipeline.py
 
-      # 5) 差分があればコミット & プッシュ ----------------------------------
-      - name: Commit & push if changed
+      # 5) Git ユーザー設定
+      - name: Configure Git
         run: |
-          git config --global user.email "ci-bot@users.noreply.github.com"
-          git config --global user.name  "ci-bot"
-          if [[ `git status --porcelain` ]]; then
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name  "github-actions[bot]"
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
+      # 6) 変更があればコミット
+      - name: Commit changes (if any)
+        run: |
+          if ! git diff --quiet; then
             git add data tools/kirara_issue_urls.csv
             git commit -m "chore(ci): monthly scrape & etl"
-            git push
           else
             echo "No changes"
           fi
 
-     
+      # 7) push 前に最新の origin/main に追随（rebase）
+      - name: Rebase onto origin/main
+        run: |
+          # 念のため main に切替（detached HEAD 対策）
+          git checkout main
+          git fetch origin main
+          # 競合が出たら失敗させて手動対応
+          git pull --rebase origin main || { echo "Rebase conflict"; exit 1; }
+
+      # 8) Push
+      - name: Push
+        run: |
+          # rebase 済みなので fast-forward で押せる想定
+          git push origin HEAD:main
