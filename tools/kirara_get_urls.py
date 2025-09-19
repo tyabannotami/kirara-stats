@@ -59,6 +59,9 @@ def harvest_year(slug: str, year: int, sess: requests.Session) -> list[tuple]:
     rows = []
     for y, m, pk in PATTERNS[slug].findall(html):
         full = urljoin(BASE, f"/magazine/{slug}/{y}/{m}/{pk}/")
+        #きららMAX2025-11月号　アドレスの月が12になっている件の対応
+        if full =="https://www.dokidokivisual.com/magazine/kirara-max/2025/12/12720/" :
+            m = 11
         rows.append((slug, int(y), int(m), full))
     return rows
 # ──────────────────────────────────────────────

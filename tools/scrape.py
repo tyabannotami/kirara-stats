@@ -166,6 +166,10 @@ def parse_issue(url: str, magazine: str) -> list[dict]:
     """号ページ → 行リスト(dict)"""
     soup = bs4.BeautifulSoup(requests.get(url, headers=UA, timeout=15).text, "lxml")
     year, month = map(int, re.search(r"/(\d{4})/(\d{2})/", url).groups())
+    #きららMAX2025-11月号　アドレスの月が12になっている件の対応
+    if url =="https://www.dokidokivisual.com/magazine/kirara-max/2025/12/12720/" :
+        month = 11
+    
     new_layout  = (year > 2025) or (year == 2025 and month >= 3)
 
     color_lines = extract_color_blocks(soup, new_layout=new_layout, magazine=magazine)
