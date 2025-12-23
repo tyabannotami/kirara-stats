@@ -145,7 +145,7 @@ kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,魔法少女は羞恥心�
 kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,mono,rank,2,OK,実態と掲載順が異なる
 kirara-carat,kirara-carat-2025-08,cover_count,2 作,,,,OK,TVアニメ「ばっどがーる」アフレコレポートが巻頭のため問題なし
 kirara-carat,kirara-carat-2025-09,cover_count,2 作,,,,OK,TVアニメ「ばっどがーる」天狼群 撮影潜入レポートが巻頭のため問題なし
-kirara-carat,kirara-carat-2026-01,center_count,3作,ﾈｺとかと和解せよ,is_center,TRUE,OK,『ﾈｺとかと和解せよ』にタグ混入のため
+kirara-carat,kirara-carat-2026-01,center_count,3作,ﾈｺとかと和解せよ,is_center,,NG,『ﾈｺとかと和解せよ』にタグ混入のため掲載順に入っていない。エラーとして今後対応とする
 kirara-forward,kirara-forward-2015-02,cover_count,0 作,ハナヤマタ,is_cover,TRUE,OK,ホームページの記載で「TVアニメ公式ガイドブック colorful flowers」を表紙判定してしまっていて不一致
 kirara-forward,kirara-forward-2016-06,cover_count,2 作,,,,OK,表紙の『あんハピ♪』２話掲載のため問題なし
 kirara-forward,kirara-forward-2018-08,cover_count,2 作,,,,OK,表紙の『はるかなレシーブ』２話掲載のため問題なし
