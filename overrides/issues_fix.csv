@@ -145,7 +145,7 @@ kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,魔法少女は羞恥心�
 kirara-carat,kirara-carat-2025-05,top_not_rank1,rank=2,mono,rank,2,OK,実態と掲載順が異なる
 kirara-carat,kirara-carat-2025-08,cover_count,2 作,,,,OK,TVアニメ「ばっどがーる」アフレコレポートが巻頭のため問題なし
 kirara-carat,kirara-carat-2025-09,cover_count,2 作,,,,OK,TVアニメ「ばっどがーる」天狼群 撮影潜入レポートが巻頭のため問題なし
-kirara-carat,kirara-carat-2026-1,center_count,3作,ﾈｺとかと和解せよ,is_center,TRUE,OK,『ﾈｺとかと和解せよ』にタグ混入のため
+kirara-carat,kirara-carat-2026-01,center_count,3作,ﾈｺとかと和解せよ,is_center,TRUE,OK,『ﾈｺとかと和解せよ』にタグ混入のため
 kirara-forward,kirara-forward-2015-02,cover_count,0 作,ハナヤマタ,is_cover,TRUE,OK,ホームページの記載で「TVアニメ公式ガイドブック colorful flowers」を表紙判定してしまっていて不一致
 kirara-forward,kirara-forward-2016-06,cover_count,2 作,,,,OK,表紙の『あんハピ♪』２話掲載のため問題なし
 kirara-forward,kirara-forward-2018-08,cover_count,2 作,,,,OK,表紙の『はるかなレシーブ』２話掲載のため問題なし
@@ -218,7 +218,7 @@ kirara-max,kirara-max-2025-11,cover_count,0 作,魔法柴犬★はなまる,is_c
 kirara-max,kirara-max-2025-12,cover_count,2 作,ぬるめた,is_cover,TRUE,OK,ぬるめたななどコラボ表紙のため
 kirara-max,kirara-max-2025-12,cover_count,3 作,ぬるめた,is_center,TRUE,OK,センターカラーの項目でこかむも『ゲームセンターのこころ』と誤表記のため
 kirara-max,kirara-max-2025-12,cover_count,2 作,ななどなどなど,is_cover,TRUE,OK,ぬるめたななどコラボ表紙のため
-kirara-max,kirara-max-2026-2,cover_count,3 作,性別不明な殺し屋さんがカワイすぎる。,is_center,TRUE,OK,センターカラーの項目で『性別不明な殺し屋さんがカワイすぎた。』となっているため。
+kirara-max,kirara-max-2026-02,center_count,3 作,性別不明な殺し屋さんがカワイすぎる。,is_center,TRUE,OK,センターカラーの項目で『性別不明な殺し屋さんがカワイすぎた。』となっているため。
 kirara-miracle,kirara-miracle-2013-06,cover_count,1 作,夜森の国のソラニ,is_cover,FALSE,OK,取得誤り
 kirara-miracle,kirara-miracle-2013-06,cover_count,1 作,Good night! angel,is_cover,TRUE,OK,表記揺れで「A」が大文字小文字の差異があり取得漏れ
 kirara-miracle,kirara-miracle-2013-06,center_count,3 作,Good night! angel,is_center,TRUE,OK,表記揺れで「A」が大文字小文字の差異があり取得漏れ
