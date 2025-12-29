@@ -82,7 +82,7 @@ def extract_color_blocks(
                 if isinstance(sib, bs4.Tag) and sib.name == "h2":
                     break
                 block.append(
-                    sib.get_text("\n", strip=True)
+                    sib.get_text("", strip=True)
                     if hasattr(sib, "get_text") else str(sib)
                 )
             for m in TITLE_RE.finditer("\n".join(block)):
@@ -149,7 +149,7 @@ def extract_lineup(soup: bs4.BeautifulSoup) -> list[str]:
                 if isinstance(sib, bs4.Tag) and sib.name == "h2":
                     break
                 block.append(
-                    sib.get_text("\n", strip=True)
+                    sib.get_text("", strip=True)
                     if hasattr(sib, "get_text") else str(sib)
                 )
             for ln in "\n".join(block).splitlines():
@@ -207,7 +207,7 @@ def parse_issue(url: str, magazine: str) -> list[dict]:
 # ────────────────────────────────────────────────────────────────
 def cli() -> None:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--start", type=int, default=2013)
+    ap.add_argument("--start", type=int, default=2026)
     ap.add_argument("--end",   type=int)
     ap.add_argument("--url_csv", default="kirara_issue_urls.csv")
     args = ap.parse_args()
