@@ -150,6 +150,8 @@ kirara-forward,kirara-forward-2015-02,cover_count,0 作,ハナヤマタ,is_cover
 kirara-forward,kirara-forward-2016-06,cover_count,2 作,,,,OK,表紙の『あんハピ♪』２話掲載のため問題なし
 kirara-forward,kirara-forward-2018-08,cover_count,2 作,,,,OK,表紙の『はるかなレシーブ』２話掲載のため問題なし
 kirara-forward,kirara-forward-2023-04,cover_count,0 作,ちょっといっぱい！,is_cover,TRUE,OK,末尾の！が取れており表記揺れで不一致
+kirara-forward,kirara-forward-2026-04,top_not_rank1,rank=2,魔法使いロゼの佐渡ライフ,is_top,TRUE,OK,ホームページ表記誤りで実際は佐渡ライフが巻頭カラーのため
+kirara-forward,kirara-forward-2026-04,top_not_rank1,rank=2,明るいミライ,is_top,FALSE,OK,ホームページ表記誤りで実際は佐渡ライフが巻頭カラーのため
 kirara-max,kirara-max-2013-01,center_count,2 作,,,,OK,情報なしのため不明
 kirara-max,kirara-max-2013-02,center_count,2 作,,,,OK,情報なしのため不明
 kirara-max,kirara-max-2013-04,center_count,2 作,アキタランド・ゴシック,is_center,TRUE,OK,本文内にセンターカラーの記載あり。
