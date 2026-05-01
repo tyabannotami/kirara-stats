@@ -13,7 +13,7 @@ UA        = {"User-Agent": "Mozilla/5.0"}
 DATA_DIR  = Path(__file__).resolve().parents[1] / "data" / "raw"
 #TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
 #新フォーマットでは２重カギカッコだけ抜けば良さそうなので修正
-TITLE_RE  = re.compile(r"[『]([^『』]+)[』]")
+TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
 CIRCLED_RE = re.compile(r"[①-⑳➀➁]")
 
 def std(s: str) -> str:
@@ -43,7 +43,7 @@ def extract_color_blocks(
         if new_layout:
             for h2 in soup.find_all("h2"):
                 lbl = h2.get_text(strip=True)
-                if lbl not in ("表紙", "巻頭カラー", "巻頭"):
+                if "表紙" not in lbl and "巻頭" not in lbl:
                     continue
                 block = []
                 for sib in h2.next_siblings:
@@ -53,7 +53,10 @@ def extract_color_blocks(
                                  if hasattr(sib, "get_text") else str(sib))
                 m = TITLE_RE.search(" ".join(block))
                 if m:
-                    add("表紙" if "表紙" in lbl else "巻頭", m.group(1))
+                    if "表紙" in lbl:
+                        add("表紙", m.group(1))
+                    if "巻頭" in lbl:
+                        add("巻頭", m.group(1))
         else:
             hyoushiari_flag=False
             desc = soup.select_one("div.content-desc")
@@ -145,13 +148,31 @@ def extract_lineup(soup: bs4.BeautifulSoup) -> list[str]:
             if h2.get_text(strip=True) != "ラインナップ":
                 continue
             block: list[str] = []
+            p_lines: list[str] = []
             for sib in h2.next_siblings:
                 if isinstance(sib, bs4.Tag) and sib.name == "h2":
                     break
+                if isinstance(sib, bs4.Tag) and sib.name == "p":
+                    p_lines.append(sib.get_text("", strip=True))
                 block.append(
                     sib.get_text("", strip=True)
                     if hasattr(sib, "get_text") else str(sib)
                 )
+            if p_lines:
+                for ln in p_lines:
+                    if not ln or ln.startswith("※") or "休載" in ln:
+                        continue
+                    if ln.count("『") > 1:
+                        for m in TITLE_RE.finditer(ln):
+                            works.append(clean_title(m.group(1)))
+                        continue
+                    for op, cl in (("『", "』"), ("「", "」")):
+                        start = ln.find(op)
+                        end = ln.rfind(cl)
+                        if start != -1 and end > start:
+                            works.append(std(CIRCLED_RE.sub("", ln[start + 1:end])))
+                            break
+                break
             for ln in "\n".join(block).splitlines():
                 if "休載" in ln:
                     continue
