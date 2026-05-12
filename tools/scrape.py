@@ -14,6 +14,7 @@ DATA_DIR  = Path(__file__).resolve().parents[1] / "data" / "raw"
 #TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
 #新フォーマットでは２重カギカッコだけ抜けば良さそうなので修正
 TITLE_RE  = re.compile(r"[「『]([^「『」』]+)[」』]")
+LINEUP_TITLE_RE = re.compile(r"『([^『』]*(?:「[^」]*」[^『』]*)*)』|「([^「」]+)」")
 CIRCLED_RE = re.compile(r"[①-⑳➀➁]")
 
 def std(s: str) -> str:
@@ -159,12 +160,13 @@ def extract_lineup(soup: bs4.BeautifulSoup) -> list[str]:
                     if hasattr(sib, "get_text") else str(sib)
                 )
             if p_lines:
+                before = len(works)
                 for ln in p_lines:
                     if not ln or ln.startswith("※") or "休載" in ln:
                         continue
                     if ln.count("『") > 1:
-                        for m in TITLE_RE.finditer(ln):
-                            works.append(clean_title(m.group(1)))
+                        for m in LINEUP_TITLE_RE.finditer(ln):
+                            works.append(std(CIRCLED_RE.sub("", m.group(1) or m.group(2))))
                         continue
                     for op, cl in (("『", "』"), ("「", "」")):
                         start = ln.find(op)
@@ -172,12 +174,13 @@ def extract_lineup(soup: bs4.BeautifulSoup) -> list[str]:
                         if start != -1 and end > start:
                             works.append(std(CIRCLED_RE.sub("", ln[start + 1:end])))
                             break
-                break
+                if len(works) > before:
+                    break
             for ln in "\n".join(block).splitlines():
                 if "休載" in ln:
                     continue
-                for m in TITLE_RE.finditer(ln):
-                    works.append(clean_title(m.group(1)))
+                for m in LINEUP_TITLE_RE.finditer(ln):
+                    works.append(std(CIRCLED_RE.sub("", m.group(1) or m.group(2))))
             break
 
     return works
