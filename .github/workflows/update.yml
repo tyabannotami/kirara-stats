@@ -3,8 +3,8 @@ name: scrape-etl-nightly
 
 on:
   schedule:
-    # 日本時間 20:00 = UTC 11:00 毎日
-    - cron: '0 11 * * *'
+    # 日本時間 20:17 = UTC 11:17 毎日
+    - cron: '17 11 * * *'
   workflow_dispatch:        # 手動トリガ
 
 permissions:
@@ -17,14 +17,14 @@ jobs:
     steps:
       # 1) チェックアウト（完全履歴が必要）
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # 2) Python セットアップ
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
